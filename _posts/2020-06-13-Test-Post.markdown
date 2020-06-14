@@ -1,0 +1,8 @@
+
+---  
+layout: single  
+title: "Test Post"  
+---  
+
+This is a test to see how my posts will look like.
+
