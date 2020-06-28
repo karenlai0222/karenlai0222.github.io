@@ -45,11 +45,11 @@ comments: #** come back to this later **#
     issue_term           : # "pathname" (default)
   staticman:
     branch               : "master"
-    endpoint             : "https://{your Staticman v3 API}/v3/entry/github/karenlai0222/karenlai0222.github.io"
+    endpoint             : "https://bidsnotes-staticman2.herokuapp.com/v2/entry/karenlai0222/karenlai0222.github.io/master/comments"
 
-reCaptcha: #** come back to this later **#
-  siteKey                :
-  secret                 :
+reCaptcha:
+  siteKey                : 6LcJqaoZAAAAAINQXWelxF780WeWpBURWWVEYP4y
+  secret                 : WSx4PtQ9iP6Jptmf7ilaRubjTTOzfPMEe6CY5Syyz9UYMFz4xRT/L/RJM4C216+DfIO1EIcu5oFdpGla+HDqnvofdmA04PO88SnjxuAjkhrO8ZBVjuPiJ1x6hjZpuLRIMcO5eIY2ltvizCekaMX+osxrjJQ0JmcreANndLvd0O+9m50sJWltqyA2ExVwPvvQOYGeA+UBpYb4EjcUTQzi0CV3Gahh95YrxmIZ2fko7xtcLaehxEDW5PKTBdTielsE7USWd3B94CpPBB9hcswc0MxqB/ivLR1kJJkkiqDtttSGlWj9YH3Q/gemdsMCwvulYeo4nb2QJLlEe5m9Iq80pg==
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true #true, false (default)
@@ -220,6 +220,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-archives
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -228,7 +229,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
 
 # Archives
 #  Type
@@ -246,6 +246,9 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+year_archive:
+  type: liquid
+  path: /year/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -280,3 +283,10 @@ defaults:
       comments: true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
