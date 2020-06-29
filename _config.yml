@@ -30,7 +30,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments: #** come back to this later **#
-  provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : false #(default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -44,8 +44,8 @@ comments: #** come back to this later **#
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
   staticman:
-    branch               : "master"
-    endpoint             : "https://bidsnotes-staticman2.herokuapp.com/v3/entry/github/"
+    branch               : #"master"
+    endpoint             : #"https://bidsnotes-staticman2.herokuapp.com/v3/entry/github/"
 
 reCaptcha:
   siteKey                : 6LcJqaoZAAAAAINQXWelxF780WeWpBURWWVEYP4y
