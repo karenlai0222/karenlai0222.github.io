@@ -45,7 +45,7 @@ comments: #** come back to this later **#
     issue_term           : # "pathname" (default)
   staticman:
     branch               : "master"
-    endpoint             : "https://bidsnotes-staticman2.herokuapp.com/v2/entry/karenlai0222/karenlai0222.github.io/master/comments"
+    endpoint             : "https://bidsnotes-staticman2.herokuapp.com/v3/entry/github/"
 
 reCaptcha:
   siteKey                : 6LcJqaoZAAAAAINQXWelxF780WeWpBURWWVEYP4y
