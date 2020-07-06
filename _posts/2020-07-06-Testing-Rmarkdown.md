@@ -1,9 +1,7 @@
 ---
 layout: single
 title: "Testing R markdown"
-author: "Karen Lai"
 date: "7/6/2020"
-output: html_document
 ---
 
 
