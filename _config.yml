@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes"
+# remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -53,7 +53,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true #true, false (default)
-search_full_content      : # true, false (default)
+search_full_content      : true, false (default)
 search_provider          : lunr # (default), algolia, google #**come back to this later **#
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -173,6 +173,7 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - "*.Rmd"
 keep_files:
   - .git
   - .svn
@@ -272,9 +273,6 @@ compress_html:
 # Local server
 port: 3000
 
-# Ignore Rmd files
-exclude: ['*.Rmd']
-
 # Defaults
 defaults:
   # _posts
@@ -285,7 +283,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: True
+      comments: true
       share: true
       related: true
   # _pages
