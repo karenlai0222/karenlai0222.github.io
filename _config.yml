@@ -269,6 +269,11 @@ compress_html:
   ignore:
     envs: development
 
+# Local server
+port: 3000
+
+# Ignore Rmd files
+exclude: ['*.Rmd']
 
 # Defaults
 defaults:
