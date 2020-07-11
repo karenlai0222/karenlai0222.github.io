@@ -17,19 +17,19 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 title                    : "BIDS notes"
-title_separator          : "-"
+title_separator          : "|"
 subtitle                 : "BioInformatics and Data Science Notes" # site tagline that appears below site title in masthead
 name                     : "Karen Lai"
 description              : "This is my learnign notes about BioInformatics and Data Science."
 url                      : "https://karenlai0222.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "karenlai0222/karenlai0222.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : /assets/images/dna-4478127_1920.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png" #** I need to come back here later **#
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
-comments: #** come back to this later **#
+comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : "bids-notes" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
@@ -48,12 +48,13 @@ comments: #** come back to this later **#
     endpoint             : #"https://bidsnotes-staticman2.herokuapp.com/v3/entry/github/"
 
 reCaptcha:
+  enabled                : true
   siteKey                : 6LcJqaoZAAAAAINQXWelxF780WeWpBURWWVEYP4y
   secret                 : WSx4PtQ9iP6Jptmf7ilaRubjTTOzfPMEe6CY5Syyz9UYMFz4xRT/L/RJM4C216+DfIO1EIcu5oFdpGla+HDqnvofdmA04PO88SnjxuAjkhrO8ZBVjuPiJ1x6hjZpuLRIMcO5eIY2ltvizCekaMX+osxrjJQ0JmcreANndLvd0O+9m50sJWltqyA2ExVwPvvQOYGeA+UBpYb4EjcUTQzi0CV3Gahh95YrxmIZ2fko7xtcLaehxEDW5PKTBdTielsE7USWd3B94CpPBB9hcswc0MxqB/ivLR1kJJkkiqDtttSGlWj9YH3Q/gemdsMCwvulYeo4nb2QJLlEe5m9Iq80pg==
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true #true, false (default)
-search_full_content      : true, false (default)
+search_full_content      : true #true, false (default)
 search_provider          : lunr # (default), algolia, google #**come back to this later **#
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -86,10 +87,10 @@ social:
 
 # Analytics #** come back later **#
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : google # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : UA-171664564-2
+    anonymize_ip         : false # true, false (default)
 
 
 # Site Author
