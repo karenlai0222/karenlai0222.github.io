@@ -97,7 +97,7 @@ analytics:
 author: #** come back later **#
   name             : "Karen Lai"
   avatar           : "/assets/images/dna-4478127_1920.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Bioinformatics Scientist / NGS Data Scientis / Runner" #** come back later **#
+  bio              : "Bioinformatics Scientist / NGS Data Scientist / Runner" #** come back later **#
   location         : "USA"
   email            :
   links:
