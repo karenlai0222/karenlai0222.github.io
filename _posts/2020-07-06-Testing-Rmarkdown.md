@@ -2,6 +2,10 @@
 layout: single
 title: "Testing R markdown"
 date: "7/6/2020"
+categories: R
+tags:
+  - Single cell
+  - Tutorial
 ---
 
 

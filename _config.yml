@@ -274,6 +274,12 @@ compress_html:
 # Local server
 port: 3000
 
+# Collections
+collections:
+  blog:
+    output: true
+    permalink: /:collection/:path/
+
 # Defaults
 defaults:
   # _posts
@@ -294,3 +300,12 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _blog
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: single
+      author_profile: true
+      share: true
+
